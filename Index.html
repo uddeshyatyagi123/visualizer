@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">Sorting Visualizer</h1>
+    <div id="container">
+
+        <div id="controls">
+            <button class="controls1" id="arraygenerate">Generate Random Array</button><br>
+            <label class="controls1" id="algos" for="algorithmselection">Select Sorting Algorithm:</label>
+            <select class="controls1" id="algorithmselection">
+                <option value="bubble">Bubble Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select><br>
+            <button class="controls1" id="start-sort">Start Sorting</button>
+            <button class="controls1" id="stop-sort">Stop Sorting</button><br>
+            <label class="controls1" for="speed">Speed:</label>
+            <input class="controls1" type="range" id="speed" min="1" max="100" value="50">
+        </div>
+        <div id="arraycontainer">
+
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
